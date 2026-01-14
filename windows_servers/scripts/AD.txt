@@ -1,0 +1,24 @@
+# Variables globales
+$Domain = "kroikro.internal"  # Nom de domaine
+$Password = "Pa$$w0rd2025"  # Mot de passe par défaut
+
+# Création des Groupes dans les OU sous "JUBIL"
+New-ADGroup -Name "Marketing" -GroupScope Global -Path "OU=Administration,OU=JUBIL,DC=JUBILSA,DC=internal"
+New-ADGroup -Name "Finances" -GroupScope Global -Path "OU=Kroikro,DC=kroikro,DC=internal"
+
+
+# Création des utilisateurs et ajout aux groupes sans changer le mot de passe à la première connexion
+New-ADUser -Name "Jean Dupont" -GivenName "Jean" -Surname "Dupont" -UserPrincipalName "jeandupont@$Domain" -SamAccountName "jeandupont" -Path "OU=Marketing,OU=kroikro,DC=kroikro,DC=internal" -AccountPassword (ConvertTo-SecureString $Password -AsPlainText -Force) -PasswordNeverExpires $true -ChangePasswordAtLogon $false -Enabled $true
+Add-ADGroupMember -Identity "Marketing" -Members "jeandupont"
+
+New-ADUser -Name "Marie Martin" -GivenName "Marie" -Surname "Martin" -UserPrincipalName "mariemartin@$Domain" -SamAccountName "mariemartin" -Path "OU=Marketing,OU=kroikro,DC=kroikro,DC=internal" -AccountPassword (ConvertTo-SecureString $Password -AsPlainText -Force) -PasswordNeverExpires $true -ChangePasswordAtLogon $false -Enabled $true
+Add-ADGroupMember -Identity "Marketing" -Members "mariemartin"
+
+New-ADUser -Name "Pierre Lefevre" -GivenName "Pierre" -Surname "Lefevre" -UserPrincipalName "pierrelefevre@$Domain" -SamAccountName "pierrelefevre" -Path "OU=Marketing,OU=kroikro,DC=kroikro,DC=internal" -AccountPassword (ConvertTo-SecureString $Password -AsPlainText -Force) -PasswordNeverExpires $true -ChangePasswordAtLogon $false -Enabled $true
+Add-ADGroupMember -Identity "Marketing" -Members "pierrelefevre"
+
+New-ADUser -Name "Sophie Durand" -GivenName "Sophie" -Surname "Durand" -UserPrincipalName "sophiedurand@$Domain" -SamAccountName "sophieurand" -Path "OU=Finances,OU=kroikro,DC=kroikro,DC=internal" -AccountPassword (ConvertTo-SecureString $Password -AsPlainText -Force) -PasswordNeverExpires $true -ChangePasswordAtLogon $false -Enabled $true
+Add-ADGroupMember -Identity "Finances" -Members "sophiedurand"
+
+New-ADUser -Name "Lucie Bernard" -GivenName "Lucie" -Surname "Bernard" -UserPrincipalName "luciebernard@$Domain" -SamAccountName "luciebernard" -Path "OU=Finances,OU=kroikro,DC=kroikro,DC=internal" -AccountPassword (ConvertTo-SecureString $Password -AsPlainText -Force) -PasswordNeverExpires $true -ChangePasswordAtLogon $false -Enabled $true
+Add-ADGroupMember -Identity "Finances" -Members "luciebernard"
