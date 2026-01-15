@@ -5,7 +5,9 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="yHxUQ9oy3LJtRVT6jXP9-22" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Site : Bullet" vertex="1">
-          <mxGeometry height="440" width="517" x="40" y="20" as="geometry" />
+          <mxGeometry height="440" width="517" x="40" y="20" as="geometry">
+            <mxRectangle height="30" width="100" x="40" y="20" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="yHxUQ9oy3LJtRVT6jXP9-19" connectable="0" parent="yHxUQ9oy3LJtRVT6jXP9-22" style="group" value="" vertex="1">
           <mxGeometry height="117.60000000000001" width="130" x="157.6" y="29.99999999999999" as="geometry" />
