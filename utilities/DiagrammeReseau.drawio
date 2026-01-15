@@ -34,11 +34,6 @@
             <mxPoint x="230" y="180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="y8sqGbptAxKZ5_aslM9p-7" connectable="0" parent="yHxUQ9oy3LJtRVT6jXP9-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Text" vertex="1">
-          <mxGeometry relative="1" x="0.2756" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="yHxUQ9oy3LJtRVT6jXP9-27" edge="1" parent="yHxUQ9oy3LJtRVT6jXP9-22" source="yHxUQ9oy3LJtRVT6jXP9-21" style="endArrow=classic;html=1;rounded=0;exitX=0.015;exitY=0.985;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.899;entryY=0.416;entryDx=0;entryDy=0;entryPerimeter=0;" target="yHxUQ9oy3LJtRVT6jXP9-24" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <Array as="points">
@@ -109,6 +104,15 @@
         <mxCell id="yHxUQ9oy3LJtRVT6jXP9-30" parent="yHxUQ9oy3LJtRVT6jXP9-22" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.laptop;pointerEvents=1;" value="&lt;div&gt;PC-BULL-02&lt;/div&gt;DHCP" vertex="1">
           <mxGeometry height="30" width="50" x="97.6" y="250" as="geometry" />
         </mxCell>
+        <mxCell id="y8sqGbptAxKZ5_aslM9p-8" parent="yHxUQ9oy3LJtRVT6jXP9-22" style="fillColorStyles=neutralFill;neutralFill=#9DA6A8;shape=mxgraph.networks2.icon;aspect=fixed;fillColor=#EDEDED;strokeColor=#000000;gradientColor=#5B6163;network2IconShadow=1;network2bgFillColor=none;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;network2Icon=mxgraph.networks2.nas_filer;network2IconW=1;network2IconH=0.62;" value="SRV-NAS-01&#xa;10.229.36.5&#xa;255.255.240.0" vertex="1">
+          <mxGeometry height="31" width="50" x="300" y="339" as="geometry" />
+        </mxCell>
+        <mxCell id="y8sqGbptAxKZ5_aslM9p-9" edge="1" parent="yHxUQ9oy3LJtRVT6jXP9-22" source="yHxUQ9oy3LJtRVT6jXP9-21" style="endArrow=classic;html=1;rounded=0;exitX=0.015;exitY=0.985;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="520" y="251.798" as="sourcePoint" />
+            <mxPoint x="310" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="yHxUQ9oy3LJtRVT6jXP9-40" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Cluster Proxmox" vertex="1">
           <mxGeometry height="280" width="400" x="600" y="40" as="geometry" />
         </mxCell>
@@ -146,15 +150,6 @@
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint x="120" y="200" as="sourcePoint" />
             <mxPoint x="170" y="150" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="yHxUQ9oy3LJtRVT6jXP9-51" parent="1" style="fillColorStyles=neutralFill;neutralFill=#9DA6A8;shape=mxgraph.networks2.icon;aspect=fixed;fillColor=#EDEDED;strokeColor=#000000;gradientColor=#5B6163;network2IconShadow=1;network2bgFillColor=none;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;network2Icon=mxgraph.networks2.nas_filer;network2IconW=1;network2IconH=0.62;" value="SRV-NAS-01&#xa;10.229.36.5&#xa;255.255.240.0" vertex="1">
-          <mxGeometry height="31" width="50" x="1080" y="164.5" as="geometry" />
-        </mxCell>
-        <mxCell id="y8sqGbptAxKZ5_aslM9p-2" edge="1" parent="1" source="yHxUQ9oy3LJtRVT6jXP9-40" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.01;entryY=0.442;entryDx=0;entryDy=0;entryPerimeter=0;" target="yHxUQ9oy3LJtRVT6jXP9-51" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="800" y="300" as="sourcePoint" />
-            <mxPoint x="850" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="y8sqGbptAxKZ5_aslM9p-4" edge="1" parent="1" source="yHxUQ9oy3LJtRVT6jXP9-21" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="yHxUQ9oy3LJtRVT6jXP9-40" value="">
