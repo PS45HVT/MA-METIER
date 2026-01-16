@@ -100,12 +100,6 @@
             <mxPoint x="247" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="y8sqGbptAxKZ5_aslM9p-6" edge="1" parent="yHxUQ9oy3LJtRVT6jXP9-22" source="yHxUQ9oy3LJtRVT6jXP9-24" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" target="yHxUQ9oy3LJtRVT6jXP9-30" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="235" y="302" as="sourcePoint" />
-            <mxPoint x="85" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="yHxUQ9oy3LJtRVT6jXP9-30" parent="yHxUQ9oy3LJtRVT6jXP9-22" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.laptop;pointerEvents=1;" value="&lt;div&gt;PC-BULL-02&lt;/div&gt;DHCP" vertex="1">
           <mxGeometry height="30" width="50" x="97.6" y="250" as="geometry" />
         </mxCell>
