@@ -4,7 +4,6 @@
 ## 🧭 Sommaire
 - Objectifs
 - Périmètre
-- Architecture
 - Plan d’adressage & VLAN
 - Structure des partages NAS
 - Déploiement – Pas à pas
@@ -34,27 +33,17 @@
 - Pare‑feu virtuel & routeur virtuel.
 - Switch physique, AP Wi‑Fi, serveur d’impression.
 
-## 🏗 Architecture
-(Diagramme Mermaid non inclus dans ce fichier, mais présent dans les docs du projet.)
-
-## 🌐 Plan d’adressage & VLAN
-- VLAN 10 – Management
-- VLAN 20 – Serveurs
-- VLAN 30 – Utilisateurs
-- VLAN 40 – Wi‑Fi Invités
-- VLAN 50 – Sauvegardes
-- DMZ – Web
-
 ## 🗂 Structure des partages NAS
+```
 NAS
  ├─ Commun
  │   ├─ Finance
  │   └─ Marketing
  ├─ Backup
  │   ├─ Proxmox
- │   └─ Serveurs
  └─ Perso
-     └─ username
+     └─ utilisateur
+```
 ## Déploiement – Pas à pas
 ### 1) Proxmox
 - Installation des trois hôtes.
@@ -81,7 +70,6 @@ NAS
 
 ## 🔐 Sécurité
 - MFA.
-- VLAN séparés.
 - Mises à jour régulières.
 - Journaux centralisés.
 
@@ -90,24 +78,21 @@ NAS
 - Tests de restauration.
 - Documentation PRA.
 
-## 📈 Supervision
-- Zabbix / Grafana.
-- Alertes serveurs.
-- Monitoring réseau.
-
 ## 🗃 Arborescence du repo
 ```
-.
-├─ docs/
-├─ agile/
-├─ scripts/
-└─ README.md
+repo/
+├── [README.md](http://readme.md/)
+├── network_devices/
+│ ├── cisco/7k
+│ ├── fortigate/
+│ └── others/
+├── windows_servers/
+│ ├── setup/
+│ └── scripts/
+├── linux_servers/
+│ ├── setup/
+│ └── scripts/
+└── common/
+├── utilities/
+└── templates/
 ```
-
-## 🤝 Contribuer
-1. Fork.
-2. Branche `feat/*` ou `fix/*`.
-3. Pull request.
-
-## 📄 Licence
-MIT.
